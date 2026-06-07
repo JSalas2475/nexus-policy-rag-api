@@ -1,0 +1,142 @@
+[
+  {
+    "id": "pto-01",
+    "question": "How many PTO days do new full-time employees receive annually?",
+    "gold_answer": "15 PTO days annually",
+    "expected_sources": ["pto-policy"],
+    "category": "PTO"
+  },
+  {
+    "id": "pto-02",
+    "question": "How many unused PTO days can employees carry over to the next year?",
+    "gold_answer": "5 unused PTO days",
+    "expected_sources": ["pto-policy"],
+    "category": "PTO"
+  },
+  {
+    "id": "pto-03",
+    "question": "How many sick days do employees receive per year?",
+    "gold_answer": "5 sick days",
+    "expected_sources": ["pto-policy"],
+    "category": "PTO"
+  },
+  {
+    "id": "remote-01",
+    "question": "How many days per week must hybrid employees work in the office?",
+    "gold_answer": "3 days per week in the office",
+    "expected_sources": ["remote-work-policy"],
+    "category": "Remote Work"
+  },
+  {
+    "id": "remote-02",
+    "question": "What is the home office stipend for eligible full remote employees?",
+    "gold_answer": "$500 home office stipend",
+    "expected_sources": ["remote-work-policy", "equipment-byod"],
+    "category": "Remote Work"
+  },
+  {
+    "id": "remote-03",
+    "question": "How long is the probationary period before employees are eligible for remote work?",
+    "gold_answer": "90-day probationary period",
+    "expected_sources": ["remote-work-policy", "onboarding-probation"],
+    "category": "Remote Work"
+  },
+  {
+    "id": "expense-01",
+    "question": "What is the daily meal allowance while traveling?",
+    "gold_answer": "$75 per day",
+    "expected_sources": ["expense-reimbursement", "travel-policy"],
+    "category": "Expense"
+  },
+  {
+    "id": "expense-02",
+    "question": "Within how many days must expenses be submitted for reimbursement?",
+    "gold_answer": "30 days",
+    "expected_sources": ["expense-reimbursement"],
+    "category": "Expense"
+  },
+  {
+    "id": "security-01",
+    "question": "What is the minimum password length required?",
+    "gold_answer": "14 characters",
+    "expected_sources": ["information-security"],
+    "category": "Security"
+  },
+  {
+    "id": "security-02",
+    "question": "How quickly must security incidents be reported?",
+    "gold_answer": "within 1 hour",
+    "expected_sources": ["information-security", "incident-reporting"],
+    "category": "Security"
+  },
+  {
+    "id": "security-03",
+    "question": "Is multi-factor authentication mandatory for all employees?",
+    "gold_answer": "MFA is mandatory for all employees",
+    "expected_sources": ["information-security"],
+    "category": "Security"
+  },
+  {
+    "id": "conduct-01",
+    "question": "What is the maximum value of gifts employees may accept from business partners?",
+    "gold_answer": "$50 or less",
+    "expected_sources": ["code-of-conduct"],
+    "category": "Conduct"
+  },
+  {
+    "id": "benefits-01",
+    "question": "What percentage of employee medical premium does the company pay?",
+    "gold_answer": "80% of employee premium",
+    "expected_sources": ["benefits-overview"],
+    "category": "Benefits"
+  },
+  {
+    "id": "benefits-02",
+    "question": "What is the 401(k) company match percentage?",
+    "gold_answer": "4% company match",
+    "expected_sources": ["benefits-overview"],
+    "category": "Benefits"
+  },
+  {
+    "id": "holiday-01",
+    "question": "How many paid company holidays does Nexus Technologies observe?",
+    "gold_answer": "10 paid company holidays",
+    "expected_sources": ["holiday-calendar"],
+    "category": "Holidays"
+  },
+  {
+    "id": "performance-01",
+    "question": "How often do performance reviews occur?",
+    "gold_answer": "twice per year",
+    "expected_sources": ["performance-reviews"],
+    "category": "Performance"
+  },
+  {
+    "id": "privacy-01",
+    "question": "Within how many days must GDPR access requests be fulfilled?",
+    "gold_answer": "30 days",
+    "expected_sources": ["data-retention-privacy"],
+    "category": "Privacy"
+  },
+  {
+    "id": "onboarding-01",
+    "question": "How long is the probationary period for new employees?",
+    "gold_answer": "90-day probationary period",
+    "expected_sources": ["onboarding-probation"],
+    "category": "Onboarding"
+  },
+  {
+    "id": "equipment-01",
+    "question": "How often are laptops refreshed?",
+    "gold_answer": "every 3 years",
+    "expected_sources": ["equipment-byod"],
+    "category": "Equipment"
+  },
+  {
+    "id": "incident-01",
+    "question": "What is the Ethics Hotline number for reporting harassment?",
+    "gold_answer": "1-888-NEXUS-ETHICS",
+    "expected_sources": ["code-of-conduct", "incident-reporting"],
+    "category": "Incident"
+  }
+]

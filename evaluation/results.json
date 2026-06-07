@@ -1,0 +1,414 @@
+{
+  "timestamp": "2026-06-07T05:21:25.319144+00:00",
+  "num_questions": 20,
+  "metrics": {
+    "groundedness_pct": 100.0,
+    "citation_accuracy_pct": 100.0,
+    "partial_match_pct": 99.2,
+    "latency_p50_ms": 579.84,
+    "latency_p95_ms": 2814.51,
+    "latency_mean_ms": 1461.44
+  },
+  "details": [
+    {
+      "id": "pto-01",
+      "question": "How many PTO days do new full-time employees receive annually?",
+      "answer": "New full-time employees receive 15 PTO days annually, accrued on a bi-weekly basis starting from their hire date. [pto-policy: PTO Accrual for New Employees]",
+      "gold_answer": "15 PTO days annually",
+      "citations": [
+        {
+          "doc_id": "pto-policy",
+          "title": "Pto Policy",
+          "section": "PTO Accrual for New Employees",
+          "snippet": "New full-time employees receive **15 PTO days annually**, accrued on a bi-weekly basis starting from their hire date. During the first year of employment, employees may use PTO as it accrues. Part-tim...",
+          "source_path": "data/policies/pto-policy.md"
+        }
+      ],
+      "latency_ms": 8171.39,
+      "grounded": true,
+      "judge_method": "llm",
+      "citation_accurate": true,
+      "partial_match": 1.0
+    },
+    {
+      "id": "pto-02",
+      "question": "How many unused PTO days can employees carry over to the next year?",
+      "answer": "Employees may carry over up to 5 unused PTO days into the next calendar year. [pto-policy: PTO Carryover]",
+      "gold_answer": "5 unused PTO days",
+      "citations": [
+        {
+          "doc_id": "pto-policy",
+          "title": "Pto Policy",
+          "section": "PTO Carryover",
+          "snippet": "Employees may carry over up to **5 unused PTO days** into the next calendar year. Any PTO balance exceeding 5 days on December 31 will be forfeited unless state law requires otherwise. Carried-over PT...",
+          "source_path": "data/policies/pto-policy.md"
+        }
+      ],
+      "latency_ms": 464.23,
+      "grounded": true,
+      "judge_method": "llm",
+      "citation_accurate": true,
+      "partial_match": 1.0
+    },
+    {
+      "id": "pto-03",
+      "question": "How many sick days do employees receive per year?",
+      "answer": "Employees receive 5 sick days per year. [pto-policy: Sick Leave]",
+      "gold_answer": "5 sick days",
+      "citations": [
+        {
+          "doc_id": "pto-policy",
+          "title": "Pto Policy",
+          "section": "Sick Leave",
+          "snippet": "In addition to PTO, employees receive **5 sick days** per year for personal illness or medical appointments. Sick days do not carry over and are separate from PTO. Employees may not use sick days for ...",
+          "source_path": "data/policies/pto-policy.md"
+        }
+      ],
+      "latency_ms": 525.93,
+      "grounded": true,
+      "judge_method": "llm",
+      "citation_accurate": true,
+      "partial_match": 1.0
+    },
+    {
+      "id": "remote-01",
+      "question": "How many days per week must hybrid employees work in the office?",
+      "answer": "Hybrid employees must work 3 days per week in the office. [remote-work-policy: Hybrid Schedule]",
+      "gold_answer": "3 days per week in the office",
+      "citations": [
+        {
+          "doc_id": "remote-work-policy",
+          "title": "Remote Work Policy",
+          "section": "Hybrid Schedule",
+          "snippet": "The standard hybrid schedule requires employees to work **3 days per week in the office** (Tuesday, Wednesday, Thursday) and up to 2 days remotely (Monday and Friday). Departments may adjust core in-o...",
+          "source_path": "data/policies/remote-work-policy.md"
+        }
+      ],
+      "latency_ms": 547.29,
+      "grounded": true,
+      "judge_method": "llm",
+      "citation_accurate": true,
+      "partial_match": 1.0
+    },
+    {
+      "id": "remote-02",
+      "question": "What is the home office stipend for eligible full remote employees?",
+      "answer": "The home office stipend for eligible full remote employees is $500. [equipment-byod: Home Office Equipment]",
+      "gold_answer": "$500 home office stipend",
+      "citations": [
+        {
+          "doc_id": "equipment-byod",
+          "title": "Equipment Byod",
+          "section": "Home Office Equipment",
+          "snippet": "Full remote employees receive a **$500 one-time stipend** for home office setup (see Remote Work Policy). Stipend-eligible items include desk, chair, monitor stand, and ergonomic accessories. Receipts...",
+          "source_path": "data/policies/equipment-byod.md"
+        }
+      ],
+      "latency_ms": 542.1,
+      "grounded": true,
+      "judge_method": "llm",
+      "citation_accurate": true,
+      "partial_match": 1.0
+    },
+    {
+      "id": "remote-03",
+      "question": "How long is the probationary period before employees are eligible for remote work?",
+      "answer": "The probationary period is 90 days before employees are eligible to request remote or hybrid work arrangements. [remote-work-policy: Eligibility]",
+      "gold_answer": "90-day probationary period",
+      "citations": [
+        {
+          "doc_id": "remote-work-policy",
+          "title": "Remote Work Policy",
+          "section": "Eligibility",
+          "snippet": "All full-time employees who have completed their **90-day probationary period** are eligible to request remote or hybrid work arrangements. New hires may work remotely only with written director appro...",
+          "source_path": "data/policies/remote-work-policy.md"
+        }
+      ],
+      "latency_ms": 548.62,
+      "grounded": true,
+      "judge_method": "llm",
+      "citation_accurate": true,
+      "partial_match": 1.0
+    },
+    {
+      "id": "expense-01",
+      "question": "What is the daily meal allowance while traveling?",
+      "answer": "The daily meal allowance while traveling is $75 per day. [expense-reimbursement: Meals During Travel]",
+      "gold_answer": "$75 per day",
+      "citations": [
+        {
+          "doc_id": "expense-reimbursement",
+          "title": "Expense Reimbursement",
+          "section": "Meals During Travel",
+          "snippet": "Daily meal allowance while traveling is **$75** per day. Alcohol is not reimbursable unless entertaining approved clients with prior manager approval.",
+          "source_path": "data/policies/expense-reimbursement.md"
+        }
+      ],
+      "latency_ms": 579.84,
+      "grounded": true,
+      "judge_method": "llm",
+      "citation_accurate": true,
+      "partial_match": 1.0
+    },
+    {
+      "id": "expense-02",
+      "question": "Within how many days must expenses be submitted for reimbursement?",
+      "answer": "Expenses must be submitted within 30 days of incurring the expense. [expense-reimbursement: General Guidelines]",
+      "gold_answer": "30 days",
+      "citations": [
+        {
+          "doc_id": "expense-reimbursement",
+          "title": "Expense Reimbursement",
+          "section": "General Guidelines",
+          "snippet": "Employees must obtain pre-approval for any single expense exceeding **$500**. All expenses must be submitted within **30 days** of incurring the expense via the Concur expense system. Receipts are req...",
+          "source_path": "data/policies/expense-reimbursement.md"
+        }
+      ],
+      "latency_ms": 679.99,
+      "grounded": true,
+      "judge_method": "llm",
+      "citation_accurate": true,
+      "partial_match": 1.0
+    },
+    {
+      "id": "security-01",
+      "question": "What is the minimum password length required?",
+      "answer": "The minimum password length required is 14 characters. [information-security: Password Requirements]",
+      "gold_answer": "14 characters",
+      "citations": [
+        {
+          "doc_id": "information-security",
+          "title": "Information Security",
+          "section": "Password Requirements",
+          "snippet": "All employees must use passwords that meet the following criteria:\n- Minimum **14 characters**\n- At least one uppercase letter, one lowercase letter, one number, and one special character\n- Passwords ...",
+          "source_path": "data/policies/information-security.md"
+        }
+      ],
+      "latency_ms": 583.44,
+      "grounded": true,
+      "judge_method": "llm",
+      "citation_accurate": true,
+      "partial_match": 1.0
+    },
+    {
+      "id": "security-02",
+      "question": "How quickly must security incidents be reported?",
+      "answer": "Security incidents must be reported within 1 hour of discovery. [information-security: Incident Reporting]",
+      "gold_answer": "within 1 hour",
+      "citations": [
+        {
+          "doc_id": "information-security",
+          "title": "Information Security",
+          "section": "Incident Reporting",
+          "snippet": "Security incidents must be reported to the Security Operations Center (SOC) within **1 hour** of discovery via the incident hotline (1-800-NEXUS-SOC) or security@nexustech.com. Failure to report incid...",
+          "source_path": "data/policies/information-security.md"
+        }
+      ],
+      "latency_ms": 547.74,
+      "grounded": true,
+      "judge_method": "llm",
+      "citation_accurate": true,
+      "partial_match": 1.0
+    },
+    {
+      "id": "security-03",
+      "question": "Is multi-factor authentication mandatory for all employees?",
+      "answer": "Multi-factor authentication is mandatory for all employees accessing company systems. [doc_id: information-security | Section: Multi-Factor Authentication (MFA)]",
+      "gold_answer": "MFA is mandatory for all employees",
+      "citations": [
+        {
+          "doc_id": "information-security",
+          "title": "Information Security",
+          "section": "Multi-Factor Authentication (MFA)",
+          "snippet": "MFA is **mandatory** for all employees accessing company systems, including email, VPN, cloud services, and source code repositories. Approved MFA methods include hardware security keys (preferred), a...",
+          "source_path": "data/policies/information-security.md"
+        }
+      ],
+      "latency_ms": 637.1,
+      "grounded": true,
+      "judge_method": "llm",
+      "citation_accurate": true,
+      "partial_match": 0.833
+    },
+    {
+      "id": "conduct-01",
+      "question": "What is the maximum value of gifts employees may accept from business partners?",
+      "answer": "The maximum value of gifts employees may accept from business partners is $50 or less. [code-of-conduct: Gifts and Entertainment]",
+      "gold_answer": "$50 or less",
+      "citations": [
+        {
+          "doc_id": "code-of-conduct",
+          "title": "Code Of Conduct",
+          "section": "Gifts and Entertainment",
+          "snippet": "Employees may accept gifts valued at **$50 or less** from business partners. Gifts exceeding $50 must be declined or approved by a director. Cash gifts are never acceptable regardless of amount.",
+          "source_path": "data/policies/code-of-conduct.md"
+        }
+      ],
+      "latency_ms": 466.75,
+      "grounded": true,
+      "judge_method": "llm",
+      "citation_accurate": true,
+      "partial_match": 1.0
+    },
+    {
+      "id": "benefits-01",
+      "question": "What percentage of employee medical premium does the company pay?",
+      "answer": "The company pays 80% of employee premium costs. [doc_id: benefits-overview | Section: Health Insurance]",
+      "gold_answer": "80% of employee premium",
+      "citations": [
+        {
+          "doc_id": "benefits-overview",
+          "title": "Benefits Overview",
+          "section": "Health Insurance",
+          "snippet": "Nexus Technologies offers medical, dental, and vision insurance through BlueCross Premier. The company pays **80% of employee premium** costs and **60% of dependent premium** costs.",
+          "source_path": "data/policies/benefits-overview.md"
+        }
+      ],
+      "latency_ms": 506.4,
+      "grounded": true,
+      "judge_method": "llm",
+      "citation_accurate": true,
+      "partial_match": 1.0
+    },
+    {
+      "id": "benefits-02",
+      "question": "What is the 401(k) company match percentage?",
+      "answer": "The 401(k) company match percentage is 4% on employee contributions up to 6% of salary [doc_id: benefits-overview | Section: Retirement Benefits]",
+      "gold_answer": "4% company match",
+      "citations": [
+        {
+          "doc_id": "benefits-overview",
+          "title": "Benefits Overview",
+          "section": "Retirement Benefits",
+          "snippet": "Nexus Technologies offers a 401(k) plan with **4% company match** on employee contributions up to 6% of salary. Employees are eligible for the match after **90 days** of employment. Vesting schedule: ...",
+          "source_path": "data/policies/benefits-overview.md"
+        }
+      ],
+      "latency_ms": 629.68,
+      "grounded": true,
+      "judge_method": "llm",
+      "citation_accurate": true,
+      "partial_match": 1.0
+    },
+    {
+      "id": "holiday-01",
+      "question": "How many paid company holidays does Nexus Technologies observe?",
+      "answer": "Nexus Technologies observes 10 paid company holidays. [doc_id: holiday-calendar | Section: Paid Holidays]",
+      "gold_answer": "10 paid company holidays",
+      "citations": [
+        {
+          "doc_id": "holiday-calendar",
+          "title": "Holiday Calendar",
+          "section": "Paid Holidays",
+          "snippet": "Nexus Technologies observes the following **10 paid company holidays** in 2025. Full-time employees receive holiday pay; part-time employees receive prorated holiday pay based on their schedule.",
+          "source_path": "data/policies/holiday-calendar.md"
+        }
+      ],
+      "latency_ms": 428.58,
+      "grounded": true,
+      "judge_method": "llm",
+      "citation_accurate": true,
+      "partial_match": 1.0
+    },
+    {
+      "id": "performance-01",
+      "question": "How often do performance reviews occur?",
+      "answer": "Performance reviews occur twice per year. [doc_id: performance-reviews | Section: Review Cycle]",
+      "gold_answer": "twice per year",
+      "citations": [
+        {
+          "doc_id": "performance-reviews",
+          "title": "Performance Reviews",
+          "section": "Review Cycle",
+          "snippet": "Performance reviews occur **twice per year**:\n- **Mid-Year Review**: July 1\u201331 (progress check, no compensation changes)\n- **Annual Review**: January 15\u2013February 15 (comprehensive review with compensa...",
+          "source_path": "data/policies/performance-reviews.md"
+        }
+      ],
+      "latency_ms": 2657.74,
+      "grounded": true,
+      "judge_method": "llm",
+      "citation_accurate": true,
+      "partial_match": 1.0
+    },
+    {
+      "id": "privacy-01",
+      "question": "Within how many days must GDPR access requests be fulfilled?",
+      "answer": "GDPR access requests must be fulfilled within 30 days. [data-retention-privacy: GDPR Compliance]",
+      "gold_answer": "30 days",
+      "citations": [
+        {
+          "doc_id": "data-retention-privacy",
+          "title": "Data Retention Privacy",
+          "section": "GDPR Compliance",
+          "snippet": "For EU/EEA data subjects, Nexus Technologies ensures:\n- Lawful basis documented for all processing activities\n- Data Processing Agreements (DPAs) with all third-party processors\n- Right to access requ...",
+          "source_path": "data/policies/data-retention-privacy.md"
+        }
+      ],
+      "latency_ms": 2814.51,
+      "grounded": true,
+      "judge_method": "llm",
+      "citation_accurate": true,
+      "partial_match": 1.0
+    },
+    {
+      "id": "onboarding-01",
+      "question": "How long is the probationary period for new employees?",
+      "answer": "The probationary period for new employees is 90 days. [onboarding-probation: Section 4]",
+      "gold_answer": "90-day probationary period",
+      "citations": [
+        {
+          "doc_id": "onboarding-probation",
+          "title": "Onboarding Probation",
+          "section": "Section 9",
+          "snippet": "SECTION 7: 30-60-90 DAY GOALS\nNew employees work with their manager to establish:\n- 30-day: Learn systems, meet team, complete training\n- 60-day: Begin independent contributions, own small projects\n- ...",
+          "source_path": "data/policies/onboarding-probation.txt"
+        }
+      ],
+      "latency_ms": 2560.54,
+      "grounded": true,
+      "judge_method": "llm",
+      "citation_accurate": true,
+      "partial_match": 1.0
+    },
+    {
+      "id": "equipment-01",
+      "question": "How often are laptops refreshed?",
+      "answer": "Laptops are refreshed every 3 years or sooner if damaged beyond repair. [equipment-byod: Equipment Lifecycle]",
+      "gold_answer": "every 3 years",
+      "citations": [
+        {
+          "doc_id": "equipment-byod",
+          "title": "Equipment Byod",
+          "section": "Equipment Lifecycle",
+          "snippet": "Laptops are refreshed every **3 years** or sooner if damaged beyond repair. Employees may request early refresh with IT approval if performance issues affect productivity. Old equipment must be return...",
+          "source_path": "data/policies/equipment-byod.md"
+        }
+      ],
+      "latency_ms": 2647.91,
+      "grounded": true,
+      "judge_method": "llm",
+      "citation_accurate": true,
+      "partial_match": 1.0
+    },
+    {
+      "id": "incident-01",
+      "question": "What is the Ethics Hotline number for reporting harassment?",
+      "answer": "The Ethics Hotline number for reporting harassment is 1-888-NEXUS-ETHICS. [code-of-conduct: Reporting Procedures]",
+      "gold_answer": "1-888-NEXUS-ETHICS",
+      "citations": [
+        {
+          "doc_id": "code-of-conduct",
+          "title": "Code Of Conduct",
+          "section": "Reporting Procedures",
+          "snippet": "Employees who experience or witness harassment should report it immediately to their manager, HR, or via the anonymous Ethics Hotline at **1-888-NEXUS-ETHICS**. All reports will be investigated within...",
+          "source_path": "data/policies/code-of-conduct.md"
+        }
+      ],
+      "latency_ms": 2688.99,
+      "grounded": true,
+      "judge_method": "llm",
+      "citation_accurate": true,
+      "partial_match": 1.0
+    }
+  ]
+}

@@ -1,0 +1,38 @@
+NEXUS TECHNOLOGIES - INCIDENT REPORTING POLICY
+
+OVERVIEW
+All employees must promptly report workplace incidents, safety hazards, security events, and policy violations. Timely reporting protects employees, customers, and the company.
+
+WHAT TO REPORT
+- Workplace injuries or near-misses
+- Security incidents (data breaches, unauthorized access, lost devices)
+- Safety hazards (fire, chemical spills, structural issues)
+- Harassment or discrimination
+- Fraud or financial misconduct
+- Equipment failures affecting business operations
+
+REPORTING TIMELINES
+- Injuries: Immediately, and within 1 hour to your manager and Safety Team
+- Security incidents: Within 1 hour to security@nexustech.com or 1-800-NEXUS-SOC
+- Safety hazards: Within 4 hours to facilities@nexustech.com
+- HR incidents: Within 24 hours to HR or the Ethics Hotline (1-888-NEXUS-ETHICS)
+- All other incidents: Within 24 hours to your manager
+
+REPORTING METHODS
+1. Emergency: Call 911 first for life-threatening situations, then notify Security
+2. Security incidents: security@nexustech.com or SOC hotline
+3. HR incidents: HR portal or Ethics Hotline (anonymous option available)
+4. Safety incidents: facilities@nexustech.com or ext. 9911
+5. General incidents: Incident Report Form on the employee portal
+
+INVESTIGATION PROCESS
+All reported incidents are logged in the Incident Management System within 2 business hours. Investigations begin within 1 business day for high-severity incidents and within 3 business days for standard incidents. Reporters receive status updates every 5 business days.
+
+NON-RETALIATION
+Nexus Technologies prohibits retaliation against employees who report incidents in good faith. Retaliation should be reported immediately to HR or the Ethics Hotline.
+
+DOCUMENTATION
+Incident reports must include: date/time, location, people involved, description of event, immediate actions taken, and witnesses. Photos and screenshots may be attached when relevant.
+
+CONTACT
+General questions: compliance@nexustech.com
