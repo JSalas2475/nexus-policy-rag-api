@@ -7,7 +7,7 @@ flowchart TB
     subgraph ingest [Ingestion]
         Docs[Policy Corpus] --> Parser[Multi-format Parser]
         Parser --> Chunker[Heading-aware Chunker]
-        Chunker --> Embed[HF Embeddings]
+        Chunker --> Embed[FastEmbed ONNX]
         Embed --> Chroma[(Chroma DB)]
     end
 
@@ -27,17 +27,17 @@ flowchart TB
 
 Groq provides fast inference on a free tier, which helps meet latency targets while maintaining strong answer quality. Temperature is set to 0.1 for factual consistency.
 
-### Embeddings: sentence-transformers/all-MiniLM-L6-v2
+### Embeddings: FastEmbed (BAAI/bge-small-en-v1.5)
 
-This model runs locally without API keys, is lightweight enough for Render free tier, and performs well on semantic similarity for short policy passages. Embeddings are L2-normalized for cosine similarity in Chroma.
+FastEmbed runs ONNX-based embeddings locally without PyTorch, which keeps deployment lightweight on Render free tier and works across platforms. The model `BAAI/bge-small-en-v1.5` provides strong semantic similarity for short policy passages. If local ONNX fails, the pipeline can fall back to HuggingFace Inference API when `HF_TOKEN` is set.
 
 ### Vector Store: Chroma (persistent)
 
 Chroma is simple to deploy locally and on Render without external services. The index is rebuilt during CI/build to ensure reproducibility.
 
-### Chunking: Heading-aware + recursive split
+### Chunking: Heading-aware + custom split
 
-Documents are first split by Markdown/HTML headings to preserve section context. Sections longer than 512 characters are further split with 64-character overlap using RecursiveCharacterTextSplitter. This keeps policy sections intact while avoiding oversized chunks.
+Documents are first split by Markdown/HTML headings to preserve section context. Sections longer than 512 characters are further split with 64-character overlap using a custom recursive splitter in `app/rag/chunking.py`. This keeps policy sections intact while avoiding oversized chunks.
 
 ### Retrieval: Top-10 → Re-rank to Top-4
 
