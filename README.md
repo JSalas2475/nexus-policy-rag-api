@@ -112,10 +112,6 @@ pytest -q
 
 See [deployed.md](deployed.md) for the live URL.
 
-## Demo Video
-
-Follow [DEMO_SCRIPT.md](DEMO_SCRIPT.md) for the step-by-step recording script. See [SUBMIT.md](SUBMIT.md) for final Quantic submission steps.
-
 ## Project Structure
 
 ```
