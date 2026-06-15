@@ -66,9 +66,22 @@ def _resolve_hf_token() -> str:
     return os.getenv("HF_TOKEN") or os.getenv("HUGGINGFACEHUB_API_TOKEN") or ""
 
 
+def _use_ci_embeddings() -> bool:
+    backend = os.getenv("EMBEDDING_BACKEND", "auto").lower()
+    if backend == "ci":
+        return True
+    return os.getenv("CI", "").lower() == "true" and backend == "auto" and not _resolve_hf_token()
+
+
 @lru_cache(maxsize=1)
 def get_embedding_model(model_name: str) -> Embeddings:
     backend = os.getenv("EMBEDDING_BACKEND", "auto").lower()
+
+    if _use_ci_embeddings():
+        from langchain_community.embeddings import FakeEmbeddings
+
+        logger.info("Using FakeEmbeddings for CI (skips HuggingFace model download).")
+        return FakeEmbeddings(size=384)
 
     if backend in ("auto", "local"):
         local_model = model_name if "bge" in model_name.lower() else DEFAULT_LOCAL_MODEL
